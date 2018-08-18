@@ -3,7 +3,7 @@ body{
     margin:0;
 }
 #content {
-    width: 70%;
+    width: 1080px;
     height: 100%;
 	margin: 0 auto;
     top: 0px;
@@ -58,12 +58,12 @@ body{
 
 .info li a{
     color:#fff;
-    font-size: 16px;
+    font-size: 14px;
     font-family: optima;
     font-weight: bold;
 }
 .info li#open_time a{
-    font-size: 14px;
+    font-size: 12px;
 }
 .info li img{
     width:auto;
@@ -396,7 +396,6 @@ th, td{
 }
 img {
     width: 100%;
-    height: auto;
     vertical-align: bottom;
     margin: 0;
     padding: 0;

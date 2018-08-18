@@ -221,6 +221,7 @@ li.recomend_keyword {
 #grobal{
     border: solid 3px #CC0000;
     background: #fff;
+    padding: 10px;
 }
 #grobal img{
     margin: 10px auto;
