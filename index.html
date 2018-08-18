@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>yuuki-mart</title>
+
+    <link rel="stylesheet" type="text/css" href="layout-sp.css" media="screen and (max-width:677px)">
+    <link rel="stylesheet" type="text/css" href="nav.css" media="screen and (max-width:677px)">
+    <link rel="stylesheet" type="text/css" href="layout.css" media="screen and (min-width:678px)">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" media="screen" />
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="slick/slick.min.js"></script>
+    <script>
+        $(function() {
+            $('.slider').slick({
+                  infinite: true,
+                  dots:true,
+                  slidesToShow: 1,
+                  centerMode: true, //要素を中央寄せ
+                  centerPadding:'100px', //両サイドの見えている部分のサイズ
+                  autoplay:true, //自動再生
+                  responsive: [{
+                       breakpoint: 480,
+                            settings: {
+                                 centerMode: false,
+                       }
+                  }]
+             });
+        });
+    $(function() {
+        $('.multiple-item').slick({
+              infinite: true,
+              dots:true,
+              slidesToShow: 6,
+              slidesToScroll: 6,
+              autoplay:true, //自動再生
+              responsive: [{
+                   breakpoint: 768,
+                        settings: {
+                             slidesToShow: 3,
+                             slidesToScroll: 3,
+                   }
+              },{
+                   breakpoint: 480,
+                        settings: {
+                             slidesToShow: 2,
+                             slidesToScroll: 2,
+                        }
+                   }
+              ]
+         });
+    });
+    </script>
+  </head>
+<body>
+<div id="content">
+    <!-- header -->
+    <div id="header">
+        <div id="masthead">
+            <div class="headerInfo clearfix">
+                <div class="logo">
+                    <a href="https://www.rakuten.ne.jp/gold/yuuki-mart/">
+                    <img src="./img/logo/logo_rectangle.png" width="100%">
+                    </a>
+                </div>
+                <div class="sp-logo">
+                    <a href="https://www.rakuten.ne.jp/gold/yuuki-mart/">
+                    <img src="./img/logo/logo_sp.png" width="100%">
+                    </a>
+                </div>
+                <div class="info">
+                    <ul class="info_element">
+                        <li class="phone_number"><img src="./img/head/phone.png"></li>
+                        <li class="phone_number">
+                            <ul>
+                                <li class="header_text"><a>0427131745</a></li>
+                                <li id="open_time"><a>営業時間 9:00-18:00</a></li>
+                            </ul>
+                    </ul>
+                    <ul class="info_element">
+                        <li class="mail"><img src="./img/head/mail.png"></li>
+                        <li class="mail header_text"><a>yuuki-mart@shop.rakuten.co.jp</a></li>
+                    </ul>
+                </div>
+                <div id="nav-drawer">
+                    <input id="nav-input" type="checkbox" class="nav-unshown">
+                    <label id="nav-open" for="nav-input"><span></span></label>
+                    <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+                <div id="nav-content">
+                    <ul>
+                        <li class="accbox"><input type="checkbox" id="label_category" class="cssacc"/><label for="label_category"><a>カテゴリから選ぶ</a></label>
+                            <ul class="accshow">
+                            <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000109/">製菓</a></li>
+                            <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000110/">飲料</a></li>
+                            <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000111/">カップ麺・インスタント麺</a></li>
+                            </ul>
+                        <li class="accbox"><input type="checkbox" id="label_maker" class="cssacc"/><label for="label_maker"><a>メーカーから選ぶ</a></label>
+                            <ul class="accshow">
+                            <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000113/">ネスレ</a></li>
+                            <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000114/">カルビ</a></li>
+                            <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000115/">江崎グリコ</a></li>
+                            <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000116/">東ハト</a></li>
+                            <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000117/">ブルボン</a></li>
+                            <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000118/">明治</a></li>
+                            <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000119/">若翔</a></li>
+                            <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000120/">赤い帽子</a></li>
+                            <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000121/">キリンビバレッジ</a></li>
+                            <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000122/">伊藤園</a></li>
+                            <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000123/">コカ・コーラ</a></li>
+                            <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000124/">サントリーフーズ</a></li>
+                            <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000125/">カルピス</a></li>
+                            <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000126/">大塚製薬</a></li>
+                            <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000127/">不二家</a></li>
+                            <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000128/">クラシエ フーズ</a></li>
+                            <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000129/">UHA味覚糖</a></li>
+                            <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000130/">龍角散</a></li>
+                            <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000131/">カロン</a></li>
+                            <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000132/">パイン</a></li>
+                            <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000133/">明星食</a></li>
+                            <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000134/">東洋水</a></li>
+                            <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000135/">日清食</a></li>
+                                </ul>
+                        <li class="accbox"><input type="checkbox" id="label_price" class="cssacc"/><label for="label_price"><a>価格帯で選ぶ</a></label>
+                            <ul class="accshow">
+                            <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000101/">ワンコイン500円以下</a></li>
+                            <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000102/">501円～1,000円</a></li>
+                            <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000103/">1,001円～2,000円</a></li>
+                            <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000104/">2,001円～3,000円</a></li>
+                            <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000105/">3,001円以上</a></li>
+                            </ul>
+                        <li><a herf="https://item.rakuten.co.jp/yuuki-mart/c/0000000106/">海外販売について</a></li>
+                        <li class="accbox"><input type="checkbox" id="label_language" class="cssacc"/><label for="label_language"><a>言語切り替え</a></label>
+                            <ul class="accshow">
+                                <li><a herf="https://global.rakuten.com/en/store/yuuki-mart/">英語</a></li>
+                                <li><a herf="https://global.rakuten.com/zh-cn/store/yuuki-mart/">中国簡体字</a></li>
+                                <li><a herf="https://global.rakuten.com/zh-tw/store/yuuki-mart/">中国繁體字</a></li>
+                                <li><a herf="https://global.rakuten.com/ko/store/yuuki-mart/">ハングル語</a></li>
+                            </ul>
+                        </li>
+                        <li><a herf="https://www.rakuten.ne.jp/gold/yuuki-mart/">店舗TOP</a></li>
+                        <li><a herf="https://www.rakuten.co.jp/yuuki-mart/info.html">会社概要</a></li>
+                        <li><a herf="https://www.rakuten.co.jp/yuuki-mart/info2.html">お支払い・送料について</a></li>
+                        <li><a herf="https://www.rakuten.co.jp/yuuki-mart/news.html">メルマガ登録</a></li>
+                        <li><a herf="https://www.rakuten.co.jp/">楽天市場</a></li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div id="header-bk"></div>
+        <nav class="menu">
+        <ul>
+        <li><a herf="https://www.rakuten.ne.jp/gold/yuuki-mart/">店舗TOP</a></li>
+        <li><a herf="https://www.rakuten.co.jp/yuuki-mart/info.html">会社概要</a></li>
+        <li><a herf="https://www.rakuten.co.jp/yuuki-mart/info2.html">お支払い・送料について</a></li>
+        <li><a herf="https://www.rakuten.co.jp/yuuki-mart/news.html">メルマガ登録</a></li>
+        <li><a herf="https://www.rakuten.co.jp/">楽天市場</a></li>
+        </ul>
+        </nav>
+        <div class="search">
+            <div id="head-search">
+            <form method="get" action="https://esearch.rakuten.co.jp/rms/sd/esearch/vc" target="_top" accept-charset="EUC-JP">
+            <input type="hidden" name="sv" value="6">
+            <input type="hidden" name="sid" value="358872">
+            <input type="hidden" name="su" value="yuuki-mart">
+            <input type="hidden" name="sn" value="YUUKI・mart">
+            <input type="text" id="sitem" name="sitem" placeholder="商品を検索する">
+            <input type="hidden" name="f" value="A">
+            <input type="submit" class="submit" value="検索">
+			</form>
+            </div>
+            <div class="keyword">
+                    <ul>
+                        <li class="">おすすめキーワード</a></li>
+                        <li class="recomend_keyword"><a href="https://search.rakuten.co.jp/search/mall/%E3%82%AD%E3%83%83%E3%83%88%E3%82%AB%E3%83%83%E3%83%88/?sid=358872">#キットカット</a></li>
+                        <li class="recomend_keyword"><a href="https://search.rakuten.co.jp/search/mall/%E3%81%8A%E8%8C%B6/?sid=358872">#お茶</a></li>
+                        <li class="recomend_keyword"><a href="https://item.rakuten.co.jp/yuuki-mart/y00000087/">#チキンラーメン</a></li>
+                    </ul>
+            </div>
+        </div>
+        <div class="special-content">
+            <div class="wide-slider">
+            <ul class="slider">
+             <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000109/" alt="お菓子特集"><img src="img/banner_a.png"></a></li>
+             <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000110/" alt="ドリンク特集"><img src="img/banner_b.png"></a></li>
+             <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000111/" alt="カップ麺・インスタント麺特集"><img src="img/banner_c.png"></a></li>
+             <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000107/" alt="訳ありセール"><img src="img/banner_d.png"></a></li>
+             <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000106/" alt="海外販売について"><img src="img/banner_b.png"></a></li>
+            </ul>
+            </div>
+        </div>
+        <div class="brand-content">
+            <div class="title">
+                <a>商品ブランド一覧</a>
+            </div>
+            <div id="brand-list">
+                <ul class="category box">
+                    <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000113/">ネスレ</a></li>
+                    <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000114/">カルビ</a></li>
+                    <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000115/">江崎グリコ</a></li>
+                    <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000116/">東ハト</a></li>
+                    <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000117/">ブルボン</a></li>
+                    <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000118/">明治</a></li>
+                    <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000119/">若翔</a></li>
+                    <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000120/">赤い帽子</a></li>
+                    <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000121/">キリンビバレッジ</a></li>
+                    <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000122/">伊藤園</a></li>
+                    <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000123/">コカ・コーラ</a></li>
+                    <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000124/">サントリーフーズ</a></li>
+                    <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000125/">カルピス</a></li>
+                    <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000126/">大塚製薬</a></li>
+                    <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000127/">不二家</a></li>
+                    <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000128/">クラシエ フーズ</a></li>
+                    <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000129/">UHA味覚糖</a></li>
+                    <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000130/">龍角散</a></li>
+                    <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000131/">カロン</a></li>
+                    <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000132/">パイン</a></li>
+                    <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000133/">明星食</a></li>
+                    <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000134/">東洋水</a></li>
+                    <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000135/">日清食</a></li>
+                </ul>
+            </div>
+        </div> 
+        <div class="new-content">
+            <div class="title">
+                <a>新商品</a>
+            </div>
+            <div class="small-slider">
+                <ul class="multiple-item">
+                <!--テスト用画像です。-->
+                <li><a href="https://item.rakuten.co.jp/yuuki-mart/y00000001/"><img src="img/item/y00000001.jpg"></a></li>
+                <li><a href="https://item.rakuten.co.jp/yuuki-mart/y00000001/"><img src="img/item/y00000002.jpg"></a></li>
+                <li><a href="https://item.rakuten.co.jp/yuuki-mart/y00000001/"><img src="img/item/y00000004.jpg"></a></li>
+                <li><a href="https://item.rakuten.co.jp/yuuki-mart/y00000001/"><img src="img/item/y00000006.jpg"></a></li>
+                <li><a href="https://item.rakuten.co.jp/yuuki-mart/y00000001/"><img src="img/item/y00000008.jpg"></a></li>
+                <li><a href="https://item.rakuten.co.jp/yuuki-mart/y00000001/"><img src="img/item/y00000010.jpg"></a></li>
+                <li><a href="https://item.rakuten.co.jp/yuuki-mart/y00000001/"><img src="img/item/y00000012.jpg"></a></li>
+                <li><a href="https://item.rakuten.co.jp/yuuki-mart/y00000001/"><img src="img/item/y00000014.jpg"></a></li>
+                <li><a href="https://item.rakuten.co.jp/yuuki-mart/y00000001/"><img src="img/item/y00000016.jpg"></a></li>
+                <li><a href="https://item.rakuten.co.jp/yuuki-mart/y00000001/"><img src="img/item/y00000018.jpg"></a></li>
+                <li><a href="https://item.rakuten.co.jp/yuuki-mart/y00000001/"><img src="img/item/y00000020.jpg"></a></li>
+                <!--
+                 <li><a href="https://item.rakuten.co.jp/yuuki-mart/y00000001/"><img src="img/item/y00000002.jpg"></a></li>
+                 <li><a href="https://item.rakuten.co.jp/yuuki-mart/y00000005/"><img src="img/item/y00000002.jpg"></a></li>
+                 <li><a href="https://item.rakuten.co.jp/yuuki-mart/y00000009/"><img src="img/item/y00000002.jpg"></a></li>
+                 <li><a href="https://item.rakuten.co.jp/yuuki-mart/y00000013/"><img src="img/item/y00000002.jpg"></a></li>
+                 <li><a href="https://item.rakuten.co.jp/yuuki-mart/y00000017/"><img src="img/item/y00000002.jpg"></a></li>
+                 <li><a href="https://item.rakuten.co.jp/yuuki-mart/y00000021/"><img src="img/item/y00000002.jpg"></a></li>
+                 <li><a href="https://item.rakuten.co.jp/yuuki-mart/y00000025/"><img src="img/item/y00000002.jpg"></a></li>
+                 <li><a href="https://item.rakuten.co.jp/yuuki-mart/y00000029/"><img src="img/item/y00000002.jpg"></a></li>
+                 <li><a href="https://item.rakuten.co.jp/yuuki-mart/y00000033/"><img src="img/item/y00000002.jpg"></a></li>
+                 <li><a href="https://item.rakuten.co.jp/yuuki-mart/y00000037/"><img src="img/item/y00000002.jpg"></a></li>
+                 <li><a href="https://item.rakuten.co.jp/yuuki-mart/y00000041/"><img src="img/item/y00000002.jpg"></a></li>
+                 <li><a href="https://item.rakuten.co.jp/yuuki-mart/y00000045/"><img src="img/item/y00000002.jpg"></a></li>
+                 <li><a href="https://item.rakuten.co.jp/yuuki-mart/y00000049/"><img src="img/item/y00000002.jpg"></a></li>
+                 <li><a href="https://item.rakuten.co.jp/yuuki-mart/y00000053/"><img src="img/item/y00000002.jpg"></a></li>
+                 <li><a href="https://item.rakuten.co.jp/yuuki-mart/y00000057/"><img src="img/item/y00000002.jpg"></a></li>
+                 <li><a href="https://item.rakuten.co.jp/yuuki-mart/y00000061/"><img src="img/item/y00000002.jpg"></a></li>
+                 <li><a href="https://item.rakuten.co.jp/yuuki-mart/y00000065/"><img src="img/item/y00000002.jpg"></a></li>
+                 <li><a href="https://item.rakuten.co.jp/yuuki-mart/y00000069/"><img src="img/item/y00000002.jpg"></a></li>
+                 <li><a href="https://item.rakuten.co.jp/yuuki-mart/y00000073/"><img src="img/item/y00000002.jpg"></a></li>
+                 <li><a href="https://item.rakuten.co.jp/yuuki-mart/y00000077/"><img src="img/item/y00000002.jpg"></a></li>
+                 <li><a href="https://item.rakuten.co.jp/yuuki-mart/y00000081/"><img src="img/item/y00000002.jpg"></a></li>
+                 <li><a href="https://item.rakuten.co.jp/yuuki-mart/y00000085/"><img src="img/item/y00000002.jpg"></a></li>
+                 <li><a href="https://item.rakuten.co.jp/yuuki-mart/y00000089/"><img src="img/item/y00000002.jpg"></a></li>
+                 <li><a href="https://item.rakuten.co.jp/yuuki-mart/y00000093/"><img src="img/item/y00000002.jpg"></a></li>
+                -->
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- body -->
+    <div id="body">
+        <!-- sidebar -->
+        <div id="sidebar">
+            <div id="grobal">
+                <img src="./img/country-flg/logo-1line-2018.svg" width="100%">
+                <div class="country-flg">
+                    <a href="https://global.rakuten.com/zh-cn/store/yuuki-mart/">
+                    <img src="./img/country-flg/china.png" width="100%">
+                    中文簡体字
+                    </a>
+                </div>
+                <div class="country-flg">
+                    <a href="https://global.rakuten.com/en/store/yuuki-mart/">
+                    <img src="./img/country-flg/america.png" width="100%">
+                    English</a>
+                </div>
+                <div class="country-flg">
+                    <a href="https://global.rakuten.com/ko/store/yuuki-mart/">
+                    <img src="./img/country-flg/korea.png" width="100%">
+                    Hangul</a>
+                </div>
+                <div class="country-flg">
+                    <a href="https://global.rakuten.com/zh-tw/store/yuuki-mart/">
+                    <img src="./img/country-flg/hongkong.png" width="100%">
+                    中文繁體字</a>
+                </div>
+                <div class="country-flg">
+                    <a href="https://global.rakuten.com/zh-tw/store/yuuki-mart/">
+                    <img src="./img/country-flg/taiwan.png" width="100%">
+                    中文繁體字</a>
+                </div>
+                <div class="clear">
+                </div>
+            </div>
+            <div class="side-search clear">
+                <form method="get" action="https://esearch.rakuten.co.jp/rms/sd/esearch/vc" target="_top" accept-charset="EUC-JP">
+                    <input type="hidden" name="sv" value="6">
+                    <input type="hidden" name="sid" value="358872">
+                    <input type="hidden" name="su" value="yuuki-mart">
+                    <input type="hidden" name="sn" value="YUUKI MART">
+                    <input type="text" id="sitem" name="sitem" placeholder="商品を検索する">
+                    <input type="hidden" name="f" value="A">
+                    <input type="submit" value="検索">
+                </form>
+            </div>
+            <div id="side-category" class="clear">
+                <ul class="category">
+                <p href=https://item.rakuten.co.jp/yuuki-mart/c/0000000108/"">食品</p>
+                <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000109/">製菓</a></li>
+                <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000110/">飲料</a></li>
+                <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000111/">カップ麺・インスタント麺</a></li>
+                </ul>
+                <ul class="category">
+                <p href="https://item.rakuten.co.jp/yuuki-mart/c/0000000112/">メーカーで選ぶ</p>
+                <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000113/">ネスレ</a></li>
+                <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000114/">カルビ</a></li>
+                <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000115/">江崎グリコ</a></li>
+                <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000116/">東ハト</a></li>
+                <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000117/">ブルボン</a></li>
+                <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000118/">明治</a></li>
+                <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000119/">若翔</a></li>
+                <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000120/">赤い帽子</a></li>
+                <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000121/">キリンビバレッジ</a></li>
+                <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000122/">伊藤園</a></li>
+                <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000123/">コカ・コーラ</a></li>
+                <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000124/">サントリーフーズ</a></li>
+                <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000125/">カルピス</a></li>
+                <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000126/">大塚製薬</a></li>
+                <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000127/">不二家</a></li>
+                <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000128/">クラシエ フーズ</a></li>
+                <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000129/">UHA味覚糖</a></li>
+                <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000130/">龍角散</a></li>
+                <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000131/">カロン</a></li>
+                <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000132/">パイン</a></li>
+                <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000133/">明星食</a></li>
+                <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000134/">東洋水</a></li>
+                <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000135/">日清食</a></li>
+                </ul> 
+                <ul class="category">
+                <p href="https://item.rakuten.co.jp/yuuki-mart/c/0000000100/">価格帯別で選ぶ</p>
+                <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000101/">ワンコイン500円以下</a></li>
+                <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000102/">501円～1,000円</a></li>
+                <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000103/">1,001円～2,000円</a></li>
+                <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000104/">2,001円～3,000円</a></li>
+                <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000105/">3,001円以上</a></li>
+                </ul>
+                <ul class="category">
+                <p href="https://item.rakuten.co.jp/yuuki-mart/c/0000000107/">訳ありセール</p>
+                </ul>
+                <ul class="category">
+                <p href="https://item.rakuten.co.jp/yuuki-mart/c/0000000106/">海外発送について</p>
+                </ul>
+                <ul class="category">
+                <p href="https://item.rakuten.co.jp/yuuki-mart/c/0000000001/">その他</p>
+                </ul>
+            </div>
+        </div>
+<!-- main -->
+        <div id="main">
+            <div class="special-content">
+                <div class="wide-slider">
+                <ul class="slider">
+                    <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000109/" alt="お菓子特集"><img src="img/banner_a.png"></a></li>
+                    <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000110/" alt="ドリンク特集"><img src="img/banner_b.png"></a></li>
+                    <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000111/" alt="カップ麺・インスタント麺特集"><img src="img/banner_c.png"></a></li>
+                    <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000107/" alt="訳ありセール"><img src="img/banner_d.png"></a></li>
+                    <li><a href="https://item.rakuten.co.jp/yuuki-mart/c/0000000106/" alt="海外販売について"><img src="img/banner_b.png"></a></li>
+                </ul>
+                </div>
+            </div>
+            <div class="recommend">
+<!-- recommend -->
+                <div class="title">
+                    <a>店長のおすすめITEM</a>
+                </div>
+                <div class="category_window">
+                    <ul class="category item">
+                        <li>
+                            <a href="#">
+                            <img src="img/item/y00000001.jpg" class="noImage">
+                            </a>
+                            <a class="category_itemname" href="#">#</a><br>
+                            <a class="category_itemprice">1,080円</a><br>
+                            <a class="category_itemtaxpostage">税込、送料別</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+<!-- snack -->
+            <div class="snack">
+                <div class="title">
+                    <a>お菓子PICKUP</a>
+                </div>
+                <div class="category_window">
+                    <ul class="category item">
+                        <li>
+                            <a href="https://item.rakuten.co.jp/yuuki-mart/y00000002/">
+                            <img src="img/item/y00000002.jpg" class="noImage">
+                            </a>
+                            <a class="category_itemname" href="https://item.rakuten.co.jp/yuuki-mart/y00000002/">キットカット ミニ 14枚 ネスレ日本 14枚</a><br>
+                            <a class="category_itemprice">1,080円</a><br>
+                            <a class="category_itemtaxpostage">税込、送料別</a>
+                        </li>
+                        <li>
+                            <a href="https://item.rakuten.co.jp/yuuki-mart/y00000004/">
+                            <img src="img/item/y00000004.jpg" class="noImage">
+                            </a>
+                            <a class="category_itemname" href="https://item.rakuten.co.jp/yuuki-mart/y00000004/">カルビー Jagabee バターしょうゆ味 ９０ｇ カルビ ( 18g*5袋入 ) 90g</a><br>
+                            <a class="category_itemprice">1,080円</a><br>
+                            <a class="category_itemtaxpostage">税込、送料別</a>
+                        </li>
+                        <li>
+                            <a href="https://item.rakuten.co.jp/yuuki-mart/y00000006/">
+                            <img src="img/item/y00000006.jpg" class="noImage">
+                            </a>
+                            <a class="category_itemname" href="https://item.rakuten.co.jp/yuuki-mart/y00000006/">ポッキーチョコレート 江崎グリコ 2袋</a><br>
+                            <a class="category_itemprice">1,080円</a><br>
+                            <a class="category_itemtaxpostage">税込、送料別</a>
+                        </li>
+                        <li>
+                            <a href="https://item.rakuten.co.jp/yuuki-mart/y00000008/">
+                            <img src="img/item/y00000008.jpg" class="noImage">
+                            </a>
+                            <a class="category_itemname" href="https://item.rakuten.co.jp/yuuki-mart/y00000008/">グリコ いちごポッキー9袋 6入 江崎グリコ 9袋 1.08 Kg</a><br>
+                            <a class="category_itemprice">1,080円</a><br>
+                            <a class="category_itemtaxpostage">税込、送料別</a>
+                        </li>
+                        <li>
+                            <a href="https://item.rakuten.co.jp/yuuki-mart/y00000010/">
+                            <img src="img/item/y00000010.jpg" class="noImage">
+                            </a>
+                            <a class="category_itemname" href="https://item.rakuten.co.jp/yuuki-mart/y00000010/">チョコビチョコレート味 東ハト 25g×6箱 25g</a><br>
+                            <a class="category_itemprice">1,080円</a><br>
+                            <a class="category_itemtaxpostage">税込、送料別</a>
+                        </li>
+                        <li>
+                            <a href="https://item.rakuten.co.jp/yuuki-mart/y00000012/">
+                            <img src="img/item/y00000012.jpg" class="noImage">
+                            </a>
+                            <a class="category_itemname" href="https://item.rakuten.co.jp/yuuki-mart/y00000012/">ブルボン ルマンド 13入 ブルボン 13本</a><br>
+                            <a class="category_itemprice">1,080円</a><br>
+                            <a class="category_itemtaxpostage">税込、送料別</a>
+                        </li>
+                        <li>
+                            <a href="https://item.rakuten.co.jp/yuuki-mart/y00000014/">
+                            <img src="img/item/y00000014.jpg" class="noImage">
+                            </a>
+                            <a class="category_itemname" href="https://item.rakuten.co.jp/yuuki-mart/y00000014/">ブルボン バームロール ( 8本入 ) ブルボン 8本</a><br>
+                            <a class="category_itemprice">1,080円</a><br>
+                            <a class="category_itemtaxpostage">税込、送料別</a>
+                        </li>
+                        <li>
+                            <a href="https://item.rakuten.co.jp/yuuki-mart/y00000016/">
+                            <img src="img/item/y00000016.jpg" class="noImage">
+                            </a>
+                            <a class="category_itemname" href="https://item.rakuten.co.jp/yuuki-mart/y00000016/">ブルボン エリーゼ 北海道ミルク ブルボン 18本( 2本*9袋入 )</a><br>
+                            <a class="category_itemprice">1,080円</a><br>
+                            <a class="category_itemtaxpostage">税込、送料別</a>
+                        </li>
+                        <li>
+                            <a href="https://item.rakuten.co.jp/yuuki-mart/y00000018/">
+                            <img src="img/item/y00000018.jpg" class="noImage">
+                            </a>
+                            <a class="category_itemname" href="https://item.rakuten.co.jp/yuuki-mart/y00000018/">ハイセレクションＨＳ-10 ブルボン 35袋 523g</a><br>
+                            <a class="category_itemprice">1,080円</a><br>
+                            <a class="category_itemtaxpostage">税込、送料別</a>
+                        </li>
+                        <li>
+                            <a href="https://item.rakuten.co.jp/yuuki-mart/y00000020/">
+                            <img src="img/item/y00000020.jpg" class="noImage">
+                            </a>
+                            <a class="category_itemname" href="https://item.rakuten.co.jp/yuuki-mart/y00000020/">ロアンヌバニラ ブルボン 12枚 2枚×6袋</a><br>
+                            <a class="category_itemprice">1,080円</a><br>
+                            <a class="category_itemtaxpostage">税込、送料別</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+<!-- drink -->
+            <div class="drink">
+                <div class="title">
+                    <a>飲料PICKUP</a>
+                </div>
+                <div class="category_window">
+                    <ul class="category item">
+                        <li>
+                            <a href="https://item.rakuten.co.jp/yuuki-mart/y00000036/">
+                            <img src="img/item/y00000036.jpg" class="noImage">
+                            </a>
+                            <a class="category_itemname" href="https://item.rakuten.co.jp/yuuki-mart/y00000036/">午後の紅茶 ミルクティー 500ml キリンビバレッジ（株） 容量500 ～ 599ml） 重量547g</a><br>
+                            <a class="category_itemprice">1,080円</a><br>
+                            <a class="category_itemtaxpostage">税込、送料別</a>
+                        </li>
+                        <li>
+                            <a href="https://item.rakuten.co.jp/yuuki-mart/y00000037/">
+                            <img src="img/item/y00000037.jpg" class="noImage">
+                            </a>
+                            <a class="category_itemname" href="https://item.rakuten.co.jp/yuuki-mart/y00000037/">午後の紅茶 ストレートティー 500ml キリンビバレッジ（株） 容量500 ～ 599ml） 539g</a><br>
+                            <a class="category_itemprice">1,080円</a><br>
+                            <a class="category_itemtaxpostage">税込、送料別</a>
+                        </li>
+                        <li>
+                            <a href="https://item.rakuten.co.jp/yuuki-mart/y00000038/">
+                            <img src="img/item/y00000038.jpg" class="noImage">
+                            </a>
+                            <a class="category_itemname" href="https://item.rakuten.co.jp/yuuki-mart/y00000038/">午後の紅茶 レモンティー 500ml キリンビバレッジ（株） （容量500 ～ 599ml） 546g</a><br>
+                            <a class="category_itemprice">1,080円</a><br>
+                            <a class="category_itemtaxpostage">税込、送料別</a>
+                        </li>
+                        <li>
+                            <a href="https://item.rakuten.co.jp/yuuki-mart/y00000039/">
+                            <img src="img/item/y00000039.jpg" class="noImage">
+                            </a>
+                            <a class="category_itemname" href="https://item.rakuten.co.jp/yuuki-mart/y00000039/">キリン 午後の紅茶 レモンティー 1.5L ペットボトル? キリンビバレッジ（株） 1.5L</a><br>
+                            <a class="category_itemprice">1,080円</a><br>
+                            <a class="category_itemtaxpostage">税込、送料別</a>
+                        </li>
+                        <li>
+                            <a href="https://item.rakuten.co.jp/yuuki-mart/y00000040/">
+                            <img src="img/item/y00000040.jpg" class="noImage">
+                            </a>
+                            <a class="category_itemname" href="https://item.rakuten.co.jp/yuuki-mart/y00000040/">キリン 午後の紅茶 ミルクティー 1.5L ペットボトル? キリンビバレッジ（株） 1.5L</a><br>
+                            <a class="category_itemprice">1,080円</a><br>
+                            <a class="category_itemtaxpostage">税込、送料別</a>
+                        </li>
+                        <li>
+                            <a href="https://item.rakuten.co.jp/yuuki-mart/y00000041/">
+                            <img src="img/item/y00000041.jpg" class="noImage">
+                            </a>
+                            <a class="category_itemname" href="https://item.rakuten.co.jp/yuuki-mart/y00000041/">キリン 午後の紅茶ストレートティー 1.5L ペットボトル キリンビバレッジ（株） 1.5L</a><br>
+                            <a class="category_itemprice">1,080円</a><br>
+                            <a class="category_itemtaxpostage">税込、送料別</a>
+                        </li>
+                        <li>
+                            <a href="https://item.rakuten.co.jp/yuuki-mart/y00000042/">
+                            <img src="img/item/y00000042.jpg" class="noImage">
+                            </a>
+                            <a class="category_itemname" href="https://item.rakuten.co.jp/yuuki-mart/y00000042/">キリン 生茶 500ml キリンビバレッジ（株） 525ml</a><br>
+                            <a class="category_itemprice">1,080円</a><br>
+                            <a class="category_itemtaxpostage">税込、送料別</a>
+                        </li>
+                        <li>
+                            <a href="https://item.rakuten.co.jp/yuuki-mart/y00000043/">
+                            <img src="img/item/y00000043.jpg" class="noImage">
+                            </a>
+                            <a class="category_itemname" href="https://item.rakuten.co.jp/yuuki-mart/y00000043/">午後の紅茶 リフレッシングピ－チ Ｐ500ml キリンビバレッジ（株） 500ml</a><br>
+                            <a class="category_itemprice">1,080円</a><br>
+                            <a class="category_itemtaxpostage">税込、送料別</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- footer -->
+    <div id="footer">
+        <div id="mastfoot">
+            <a class="q_title">以下、仮で作成しています。</a>
+            <div class="q_detail">
+                <p>毎日9:00-18:00 まで営業しています。</p>
+            </div>
+            <a class="q_title">お支払いについて</a>
+            <div class="q_detail">
+                <p>NP後払い（コンビニ・郵便局・銀行振り込み）手数料：220円（税込）</p>
+                <p>クレジットカード（VISA・JCB・MASTER・UC・AMEX・ダイナース）</p>
+                <p>代金引換・着払い（ヤマトコレクト：現金・電子マネー）手数料は以下の表をご覧ください。（お買い上げ金額に応じて以下の代引き手数料（税込）が加算されます）</p>
+                <table id="parcel">
+                <tbody>
+                    <tr>
+                    <th class="bank_01">総合計金額</th>
+                    <th>楽天バンク決済手数料(税込)</th>
+                    <th>楽天バンク決済手数料(税込)</th>
+                    </tr>
+                    <tr>
+                    <td class="bank_01">1円　〜　29,999円</td>
+                        <td>155円</td>
+                        <td>250円</td>
+                    </tr>
+                </tbody>
+                </table>
+            </div>
+            <a class="q_title">送料について</a>
+            <div class="q_detail">
+                <p>1個口につき下記のとおりの送料(税込)を頂戴いたします。
+※2017年11月1日AM10時からのご注文受付分より配送料を改定いたしました。ご理解とご協力のほど、宜しくお願い申し上げます。
+クール料金込</p>
+                <table id="postage">
+                        		<tbody><tr>
+                                <th class="postage_01"></th>
+                                <th>常温便</th>
+                                <th>クール便</th>
+                              </tr>
+                              
+                              <tr>
+                              <th class="postage_01">九州内</th>
+                                <td>580円</td>
+                                <td>780円</td>
+                              </tr>
+                              
+                              <tr>
+                              <th class="postage_01">四国・中国・関西</th>
+                              	<td>580円</td>
+                                <td>780円</td>
+                              </tr>
+                              
+                              <tr>
+                              <th class="postage_01">東海・北陸・信越・関東</th>
+                              	<td>580円</td>
+                                <td>800円</td>
+                              </tr>
+                              
+                              <tr>
+                              <th class="postage_01">南東北・北東北</th>
+                              	<td>800円</td>
+                                <td>980円</td>
+                              </tr>
+                              
+                               <tr>
+                               <th class="postage_01">北海道</th>
+                              	<td>1,000円</td>
+                                <td>1,200円</td>
+                              </tr>
+                              
+                               <tr>
+                               <th class="postage_01">沖縄・離島</th>
+                              	<td>580円</td>
+                                <td>1,200円</td>
+                              </tr>
+                        </tbody></table>
+            </div>
+            <a class="q_title">返品（返金・交換）について</a>>
+            
+            <div class="q_detail">
+                <p>食品を発送の場合は、原則としてお客様のご都合による（商品の破損・汚損以外） 長期不在等・ご返品はお断りしております。
+商品がお手元に届きましたらご注文内容と異なっていないかご確認下さい。 
+商品の品質については万全を期しており ますが、万一商品に破損・汚損・不良があった場合、 またはご注文と異なる場合は、お届け後7日間以内にご連絡下さい。
+未開封のものに限り、返品・交換をさせていただきます。（この場合送料は私どもが負担致します。）
+
+※　ご　注　意　※
+不具合・不良商品につきましては、こちらから商品を引取りに お伺い致しますので、どうぞ、捨てずにそのままお取り置き下さい。
+商品の確認ができない場合、返品・交換をお承れない場合もございます。 何卒ご了承くださいませ。</p>
+            </div>
+            <a class="q_title">お問い合わせについて</a>
+            <div class="q_detail">
+                <p>当店はhogeにhogeを出店しておりますYUUKI MARTのWEBショップです。ご注文や商品についてのご質問などがございましたら、お気軽にお問合せください。<br>フリーダイヤル：0427131745　受付時間：9:00～17:00 年中無休（仮）
+お電話でお問合せの際は、「楽天 YUKI MART（ユーキマート）を見て」とお伝えいただけますと幸いです。</p>
+            </div>
+        </div>
+        <div id="company">
+            <p>YUUKI MART</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

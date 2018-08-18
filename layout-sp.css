@@ -1,0 +1,408 @@
+body{
+    margin:0;
+    background:#eee;
+}
+#content {
+    width: 100%;
+    height: 100%;
+	margin: 0 auto;
+    top: 0px;
+    overflow:hidden;
+}
+#header{
+    width:100%;
+}
+#masthead{
+    background: #554236;
+    width:100%;
+    position: fixed;
+    z-index: 1;
+}
+.headerInfo{
+    /*width: 950px;*/
+    margin: 0 auto;
+    background: #554236;
+}
+.clearfix:after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.logo{
+    height: 100%;
+    width: 500px;
+    padding-left: 0px;
+    padding-right: 0px;
+    float: left;
+    display:none;
+}
+.sp-logo{
+    width: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+    float: left;
+}
+.sp-logo img{
+    height: 56px;
+    width: auto;
+}
+.info{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 200px;
+    height: 100%;
+    margin: auto;
+    display:none;
+}
+.info ul{ 
+    margin-top: 25px;
+}
+.info li a{
+    margin-left: 8px;
+    color:#fff;
+}
+#header-bk{
+    height: 56px;
+    width: 100%;
+}
+.menu{
+    height: 40px;
+    padding-top: 10px;
+    box-shadow: 0 3px 16px -9px #888;
+    background: #eee;
+    display: none;
+}
+.menu ul{
+    padding: 0px;
+    text-align: center;
+}
+.menu ul li{
+    display: inline-block;
+    width: auto;
+    border-right: 1px solid #333;
+}
+.menu li:last-child {
+    padding-left: 0;
+    border-right: none;
+}
+.menu li a{
+    padding: 0 21px;
+}
+.search{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #eee;
+}
+#head-search{
+    height: 100%;
+    width: 100%;
+    margin:0 auto;
+    text-align: center;
+}
+#head-search input[placeholder="商品を検索する"]{
+    height: 40px;
+    width: 70%;
+    border: 2px solid #554236;
+    border-radius: 3px 1px 1px 3px;
+    color: black;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, "Noto Sans Japanese", sans-serif!important;
+}
+
+#head-search input[value="検索"]{
+    height: 40px;
+    width: 20%;
+    background-color: #E83015;
+    border: 2px solid #E83015;
+    color: #ffffff;
+    font-size: 15px;
+}
+/*--search area--*/
+.keyword{
+    width: 100%;
+    text-align: center;
+    margin: 10px auto 20px auto;
+}
+.keyword li:first-child {
+    display:none;
+}
+li.recomend_keyword {
+    display: inline-block;
+    margin-left: 8px;
+}
+/*.recomend_keyword a {
+    padding: 0 4px;
+    display: inline-block;
+    line-height: 20px;
+    font-size:14px;
+}*/
+.recomend_keyword a {
+    border: 1px solid #d2d2d2;
+    border-radius: 5px;
+    padding: 0 15px;
+    display: inline-block;
+    line-height: 30px;
+    font-size: 14px;
+}
+
+/*--header 企画用スライドバナーコンテンツ--*/
+#header .special-content{
+    clear: both;
+}
+/*--スライダー調整--*/
+/*左右の矢印の色を変える*/
+.slick-prev:before,
+.slick-next:before {
+    color: #000;
+}
+/*左右の矢印の位置を変える*/
+.slick-next {
+    right: 20px;
+    z-index: 99;
+}
+.slick-prev {
+     left: 15px;
+    z-index: 100;
+}
+/*スライド数のドットの色を変える*/
+.slick-dots li.slick-active button:before,
+.slick-dots li button:before {
+    color: #fff;
+}
+.special-content li{
+    width:20%;
+    float: left;
+}
+.wide-slider{
+    width: 100%;
+    margin: 0 auto;
+}
+
+/*--header  各メーカリンク--*/
+.brand-content{
+    background-color: #ffffff;
+}
+#brand-list{
+    font-size: 0;
+    background: #eee;
+}
+.box li{
+    width: calc(100% / 2);
+    display:inline-block;
+    border-left: 1px solid #CCC;
+    margin-left: -1px;
+}
+.box li:last-child{
+    border-right: 1px solid #CCC;
+}
+.box li a{
+    font-size: 16px;
+}
+/*--header 新商品--*/
+.new-content{
+    clear: both;
+    margin-bottom: 50px;
+    background-color: #eee;
+}
+#body{
+    width:100%;
+    display: block;
+}
+#sidebar{
+    float: left;
+    background-color: #eee;
+    display: block;
+    width: 20%;
+    display: none;
+}
+#grobal{
+    border: solid 3px #CC0000;
+    background: #fff;
+}
+#grobal img{
+    margin: 10px auto;
+}
+.country-flg{
+    float: left;
+    width: calc(70% / 3);
+    padding: 10px 5%;
+}
+.country-flg img{
+    border: solid 1px #ccc;
+}
+.country-flg a{
+    display: block;
+    text-align: center;
+    font-size: 12px;
+}
+.side-search{
+    height: 60px;
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+}
+.side-search input[placeholder="商品を検索する"]{
+    height: 40px;
+    width: 70%;
+    border: 2px solid #554236;
+    border-radius: 3px 1px 1px 3px;
+    color: black;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, "Noto Sans Japanese", sans-serif!important;
+}
+
+.side-search input[value="検索"]{
+    height: 40px;
+    width: 20%;
+    background-color: #E83015;
+    border: 2px solid #E83015;
+    color: #ffffff;
+    font-size: 15px;
+}
+#side-category ul{
+    margin: 0;
+    padding:0;
+}
+.category p{
+    font-size: 15px;
+    color: #FFF;
+    text-align: center;
+    padding: 15px 0;
+    margin: 0;
+    background-color: #2A87A0;
+}
+.category li{
+    border-bottom: 1px solid #CCC;
+    background-color: #eee;
+    list-style: none;
+    text-align: center;
+}
+.category li a{
+    text-decoration: none;
+    color: #666;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 16px 0px 15px 0px;
+}
+
+#main{
+    float: left;
+    background-color: #ffffff;
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 40px;
+}
+#main .special-content{
+    margin-bottom: 100px;
+    display: none;
+}
+.recommend{
+}
+.snack{
+}
+
+.drink{
+}
+
+.title{
+    height:35px;
+    padding-top: 10px;
+    padding-left: 10px;
+    background-color: #554236;
+}
+.title a{
+    height: 100%;
+    display: block;
+    margin: auto;
+    font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, "Noto Sans Japanese", sans-serif!important;
+    color: #ffffff;
+    background-color: #554236;
+}
+.category_window{
+    font-size:0;
+}
+ul.item{
+    background:#eee
+}
+.item li{
+    width: calc(96% / 2);
+    display: inline-block;
+    border: none;
+    vertical-align: top;
+    margin: 1%;
+    background: #fff;
+}
+.item li a{
+    font-size: 14px;
+    text-decoration: none;
+    color: #666;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+.item li a.category_itemname{
+    font-size: 16px;
+    font-weight: bold;
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+.clear{
+    clear: both;
+}
+table{
+    border-collapse:collapse;
+}
+dl{
+    margin: 0;
+}
+dd{
+    margin: 0;
+}
+tr{
+    text-align: center;
+    vertical-align: top;
+}
+td{
+    padding:5px 5px 0px 10px;
+}
+img {
+    width: 100%;
+    height: auto;
+    vertical-align: bottom;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a, a:link{
+    color: #333;
+    text-decoration: none;
+    font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, "Noto Sans Japanese", sans-serif;
+}
+#footer{
+    display: inline-block;
+    width:100%;
+    background: #554236;
+}
+#mastfoot{
+    display:none
+}
+#company{
+    color: #fff;
+    text-align: center;
+    font-size: 10px;
+    padding: 5px 0;
+}
